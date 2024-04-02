@@ -13,7 +13,6 @@ class findelementByClassNameTagName:
         # driver = webdriver.Chrome(options=chrome_options)
         element_By_ClassName = driver.find_element(By.CLASS_NAME, "class1")
         print(element_By_ClassName.text)
-        
 
         if element_By_ClassName is not None:
             print("We found an element by ClassName")

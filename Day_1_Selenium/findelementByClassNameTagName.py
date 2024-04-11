@@ -8,6 +8,7 @@ class findelementByClassNameTagName:
         driver = webdriver.Chrome()
         driver.get(baseUrl)
         driver.implicitly_wait(10)
+        driver.maximize_window()
         # chrome_options = webdriver.ChromeOptions()
         # chrome_options.add_experimental_option("detach", True)
         # driver = webdriver.Chrome(options=chrome_options)

@@ -8,6 +8,7 @@ class FindElementByXpath:
         driver = webdriver.Chrome()
         driver.get(baseUrl)
         driver.implicitly_wait(10)
+        driver.maximize_window()
 
         course_name = driver.find_element(
             By.XPATH, "//table[@id='product']//td[text()='Python Programming Language']"
